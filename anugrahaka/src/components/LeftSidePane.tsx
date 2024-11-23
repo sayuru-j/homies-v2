@@ -36,13 +36,13 @@ export const PaneButton = ({
 
   return (
     <button
-      className={`px-4 py-2 w-full flex items-center rounded-xl font-semibold hover:bg-white ${className}`}
+      className={`py-2 w-full flex items-center rounded-xl font-semibold hover:bg-white ${className}`}
       {...props}
     >
       <span
         className={`${bg} rounded-full mt-[1px] ml-2 w-8 h-8 inline-flex items-center justify-center`}
       >
-        <Icon className={text} width={20} height={20} />
+        <Icon className={text} width={15} height={15} />
       </span>
       <span className="ml-3">{name}</span>
     </button>
@@ -52,7 +52,7 @@ export const PaneButton = ({
 function LeftSidePane() {
   return (
     <div className="w-1/5">
-      <div className="px-4">
+      <div>
         {paneButtons.map((btn, index) => (
           <PaneButton
             key={btn.name + index}

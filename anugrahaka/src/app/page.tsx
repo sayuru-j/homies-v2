@@ -4,7 +4,7 @@ import RightSidePane from "@/components/RightSidePane";
 
 export default function Home() {
   return (
-    <div className="flex-grow flex bg-background rounded-b-3xl p-5">
+    <div className="flex-grow flex bg-background rounded-b-3xl p-5 overflow-hidden">
       <LeftSidePane />
       <MiddlePane />
       <RightSidePane />

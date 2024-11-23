@@ -25,7 +25,7 @@ function ActiveHomies() {
             key={homie.name}
             className="flex items-center gap-2 p-2 cursor-pointer hover:bg-white rounded-xl"
           >
-            <div className="relative">
+            <div className="relative flex-shrink-0">
               <Image
                 className="object-cover w-8 h-8 rounded-full"
                 src={
@@ -37,7 +37,7 @@ function ActiveHomies() {
               />
               <div
                 className={`h-2 w-2 rounded-full absolute bottom-0 ${
-                  homie.online ? "bg-green-500" : "bg-red-500"
+                  homie.online ? "bg-green-500" : "bg-gray-300"
                 }`}
               />
             </div>

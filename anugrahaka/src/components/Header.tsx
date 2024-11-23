@@ -69,7 +69,7 @@ export const NavButton: React.FC<NavButtonProps> = ({
 function Header() {
   return (
     <div className="w-full min-h-20 bg-white rounded-t-3xl flex items-center p-5">
-      <div className="w-1/4">
+      <div className="w-1/4 ml-2">
         <Image height={10} width={100} src="/logo.png" alt="logo" />
       </div>
       <div className="w-1/2 flex justify-center">
